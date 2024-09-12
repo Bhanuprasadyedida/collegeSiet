@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="header">
+    <nav class="nav-links">
+        <a href="index.html"><img src="logo1.png" alt="SIET Logo"></a>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <ul id="nav-menu">
+            <li><a href="index.html" class="hl">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="news">
+        <marquee behavior="alternate" scrollamount="10">"SIET Project Expo 2024: Showcasing Innovation and Creativity"</marquee>
+    </div>
+    <div class="title">
+        <h1>SIET</h1>
+        <p>SRINIVASA INSTITUTE OF ENGINEERING AND TECHNOLOGY</p>
+        <h4>Igniting Minds Of GenZ</h4>
+    </div>
+</section>
+
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="loginstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">SIET.</div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#login-section" class="light">LOGIN</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="course.html">COURSES</a></li>
+      <li><a href="contact.html">CONTACT-US</a></li>
+    </ul>
+  </nav>
+
+  <!-- Quizzes Section -->
+  <section id="quizzes-section" class="section">
+    <h2>Free Quizzes</h2>
+    <div class="card-container">
+      <div class="resource-card">
+        <h3>CSS Quiz</h3>
+        <button class="btn-secondary" onclick="window.location.href='https://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS'">Start Quiz</button>
+      </div>
+      <div class="resource-card">
+        <h3>JavaScript Quiz</h3>
+        <button class="btn-secondary" onclick="window.location.href='https://www.geeksforgeeks.org/quiz-corner-gq/'">Start Quiz</button>
+      </div>
+      <div class="resource-card">
+        <h3>Python Quiz</h3>
+        <button class="btn-secondary" onclick="window.location.href='https://www.tutorialspoint.com/python/python_online_quiz.htm'">Start Quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos-section" class="section">
+    <h2>Class Videos</h2>
+    <div class="card-container">
+      <div class="resource-card">
+        <h3>Python Tutorial</h3>
+        <button class="btn-secondary" onclick="window.location.href='https://www.youtube.com/watch?v=rfscVS0vtbw'">Watch Video</button>
+      </div>
+      <div class="resource-card">
+        <h3>JavaScript Crash Course</h3>
+        <button class="btn-secondary" onclick="window.location.href='https://www.youtube.com/watch?v=jS4aFq5-91M'">Watch Video</button>
+      </div>
+      <div class="resource-card">
+        <h3>HTML Full Course</h3>
+        <button class="btn-secondary" onclick="window.location.href='https://www.youtube.com/watch?v=PKwu15ldZ7k'">Watch Video</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login-section" class="section">
+    <div class="login-box">
+      <h2>Welcome Back</h2>
+      <p>If you already have an account, please log in with your credentials below.</p>
+      <p class="subtitle">Access your account to explore quizzes and videos</p>
+      <div class="tabs">
+        <button class="tab active" onclick="showLogin()">Login</button>
+        <button class="tab" onclick="showSignup()">Signup</button>
+      </div>
+      <form id="loginForm" class="form active">
+        <input type="text" id="rollNumber" placeholder="Roll Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+      <form id="signupForm" class="form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn-primary">Signup</button>
+      </form>
+      <p>Not a member? <a href="#" onclick="showSignup()">Signup now</a></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
